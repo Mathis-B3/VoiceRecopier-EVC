@@ -1697,7 +1697,7 @@ with gr.Blocks(theme=gr.themes.Base()) as app:
             # Other RVC stuff
             with gr.Row():
                 sid0 = gr.Dropdown(label="1.Choose your Model.", choices=sorted(names), value=check_for_name())
-                refresh_button = gr.Button("Refresh", variant="primary")
+                refresh_button = gr.Button("Actualiser", variant="primary")
                 if check_for_name() != '':
                     get_vc(sorted(names)[0])
                 vc_transform0 = gr.Number(label="Optional: You can change the pitch here or leave it at 0.", value=0)
@@ -1732,7 +1732,7 @@ with gr.Blocks(theme=gr.themes.Base()) as app:
                             )
                         dropbox.upload(fn=save_to_wav2, inputs=[dropbox], outputs=[input_audio0])
                         dropbox.upload(fn=change_choices2, inputs=[], outputs=[input_audio0])
-                        refresh_button2 = gr.Button("Refresh", variant="primary", size='sm')
+                        refresh_button2 = gr.Button("Actualiser", variant="primary", size='sm')
                         record_button.change(fn=save_to_wav, inputs=[record_button], outputs=[input_audio0])
                         record_button.change(fn=change_choices2, inputs=[], outputs=[input_audio0])
                     with gr.Row():
