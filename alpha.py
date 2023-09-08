@@ -1777,7 +1777,7 @@ with gr.Blocks(theme=gr.themes.Base()) as app:
                     inputs=[sid0],
                     outputs=[spk_item],
                 )
-                but0 = gr.Button("Convert", variant="primary")
+                but0 = gr.Button("Convertir", variant="primary")
             with gr.Row():
                 with gr.Column():
                     with gr.Row():
