@@ -1685,7 +1685,7 @@ def zip_downloader(model):
 with gr.Blocks(theme=gr.themes.Base()) as app:
     with gr.Tabs():
         with gr.TabItem("Inference"):
-            gr.HTML("<h1> Easy GUI v2 (rejekts) - adapted to Mangio-RVC-Fork 💻 </h1>")
+            gr.HTML("<h1> Voice Recopier </h1>")
             # Inference Preset Row
             # with gr.Row():
             #     mangio_preset = gr.Dropdown(label="Inference Preset", choices=sorted(get_presets()))
