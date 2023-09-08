@@ -1756,11 +1756,11 @@ with gr.Blocks(theme=gr.themes.Base()) as app:
 
             # Other RVC stuff
             with gr.Row():
-                sid0 = gr.Dropdown(label="1.Choose your Model.", choices=sorted(names), value=check_for_name())
+                sid0 = gr.Dropdown(label="1.Choisissez votre modèle.", choices=sorted(names), value=check_for_name())
                 refresh_button = gr.Button("Actualiser", variant="primary")
                 if check_for_name() != '':
                     get_vc(sorted(names)[0])
-                vc_transform0 = gr.Number(label="Optional: You can change the pitch here or leave it at 0.", value=0)
+                vc_transform0 = gr.Number(label="Facultatif : vous pouvez modifier la hauteur ici ou la laisser à 0.", value=0)
                 #clean_button = gr.Button(i18n("卸载音色省显存"), variant="primary")
                 spk_item = gr.Slider(
                     minimum=0,
