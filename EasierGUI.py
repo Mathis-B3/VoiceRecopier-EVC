@@ -1700,7 +1700,7 @@ with gr.Blocks(theme=gr.themes.Base()) as app:
                 refresh_button = gr.Button("Actualiser", variant="primary")
                 if check_for_name() != '':
                     get_vc(sorted(names)[0])
-                vc_transform0 = gr.Number(label="Optional: You can change the pitch here or leave it at 0.", value=0)
+                vc_transform0 = gr.Number(label="Facultatif : vous pouvez modifier la hauteur ici ou la laisser à 0.", value=0)
                 #clean_button = gr.Button(i18n("卸载音色省显存"), variant="primary")
                 spk_item = gr.Slider(
                     minimum=0,
@@ -1717,7 +1717,7 @@ with gr.Blocks(theme=gr.themes.Base()) as app:
                     inputs=[sid0],
                     outputs=[spk_item],
                 )
-                but0 = gr.Button("Convert", variant="primary")
+                but0 = gr.Button("Convertir", variant="primary")
             with gr.Row():
                 with gr.Column():
                     with gr.Row():
