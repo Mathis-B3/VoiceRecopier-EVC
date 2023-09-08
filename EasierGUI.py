@@ -1696,7 +1696,7 @@ with gr.Blocks(theme=gr.themes.Base()) as app:
 
             # Other RVC stuff
             with gr.Row():
-                sid0 = gr.Dropdown(label="1.Choose your Model.", choices=sorted(names), value=check_for_name())
+                sid0 = gr.Dropdown(label="1.Choisissez votre modèle.", choices=sorted(names), value=check_for_name())
                 refresh_button = gr.Button("Actualiser", variant="primary")
                 if check_for_name() != '':
                     get_vc(sorted(names)[0])
